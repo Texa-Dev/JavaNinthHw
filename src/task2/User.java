@@ -1,4 +1,4 @@
-package pack;
+package task2;
 
 public class User {
     private String name;

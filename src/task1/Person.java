@@ -1,4 +1,6 @@
-package pack;
+package task1;
+
+import task1.Gender;
 
 public class Person {
 
