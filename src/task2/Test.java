@@ -25,17 +25,18 @@ public class Test {
         Получите из стрима коллекцию всех пользователей, имена, которых не
         содержат чисел, выведете содержимое коллекции в консоль.*/
 
-        /*  Stream<User> sorted = userStream.sorted(Comparator.comparing(User::getName)).filter(user ->
+          Stream<User> sorted = userStream.sorted(Comparator.comparing(User::getName)).filter(user ->
                                   user.getName().chars().allMatch(Character::isLetter));
 
-        sorted.forEach(System.out::println);*/
+        sorted.forEach(System.out::println);
+        userStream = users.stream();
 
         //Task 2.2
         /*С помощью стрима, посчитайте количество юзеров, у которых в именах
         есть числа, и выведете их количество в консоль.*/
 
-      // System.out.println("Count name with digits: "+userStream.filter(user -> user.getName().chars().anyMatch(Character::isDigit)).count());
-
+       System.out.println("Count name with digits: "+userStream.filter(user -> user.getName().chars().anyMatch(Character::isDigit)).count());
+        userStream = users.stream();
         //Task 2.3
 
        /* Получите из стрима, содержащего всех юзеров, коллекцию Map.

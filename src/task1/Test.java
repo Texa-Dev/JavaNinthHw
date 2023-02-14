@@ -18,11 +18,11 @@ public class Test {
 
         Stream<Person> personStream = persons.stream();
 
-        Stream<Person> personStream1 = personStream.filter(
+        Stream<Person> workable = personStream.filter(
                 person -> person.getAge() >= 18 && (person.getAge() <= 60 && person.getGender() == Gender.FEMALE ||
                         person.getAge() <= 65 && person.getGender() == Gender.MALE));
 
-        personStream1.forEach(System.out::println);
+        workable.forEach(System.out::println);
 
     }
 }

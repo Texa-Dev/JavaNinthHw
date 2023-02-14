@@ -40,11 +40,6 @@ public class Person {
 
     @Override
     public String toString() {
-
-        return "Person{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", gender=" + gender +
-                '}';
+        return String.format("Name: %5s,\t Age: %s,\t Gender: %s\t", name,age,gender);
     }
 }
